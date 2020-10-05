@@ -15,9 +15,9 @@
 }
 
 /**
- * mobile
+ * SP
  */
-@include mobile {
+@include media-query-sp {
   .u-sp-hidden {
     display: none !important;
   }
