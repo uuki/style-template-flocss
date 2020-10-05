@@ -1,7 +1,3 @@
-.u-sp-hidden {
-
-}
-
 .u-sp-block {
   display: none !important;
 }
@@ -15,7 +11,7 @@
 }
 
 /**
- * SP
+ * mobile
  */
 @include media-query-sp {
   .u-sp-hidden {

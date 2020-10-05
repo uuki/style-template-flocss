@@ -14,12 +14,13 @@ $icons:(
 
 @mixin icon($icon: false, $position: before) {
   @if $position == both {
-    $position: 'before, &:after'
+    $position: 'before, &:after';
   }
 
   &::#{$position} {
     @if $icon {
       content: "#{map-get($icons, $icon)}";
+      /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
       font-family: 'icomoon';
       // speak: none;
       // font-style: normal;
