@@ -1,0 +1,48 @@
+// https://github.com/csstools/postcss-normalize#postcss-import-usage
+@import-normalize();
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  word-wrap: break-word;
+  font-family: $font_default;
+  font-size: 1.6rem;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+// input {
+//   ::-webkit-contacts-auto-fill-button {
+//     visibility: hidden;
+//     display: none !important;
+//     pointer-events: none;
+//     position: absolute;
+//     right: 0;
+//   }
+// }
+
+// input::-ms-clear,
+// input::-ms-reveal {
+//   display: none;
+//   width: 0;
+//   height: 0;
+// }
+
+// select::-ms-expand {
+//   display: none;
+// }

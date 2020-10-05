@@ -1,0 +1,8 @@
+//
+// font-size を「px」と「rem」で指定
+// @param {int} $px 整数
+//
+@mixin font-size($px) {
+  font-size: $px + px;
+  font-size: ($px / 10) + rem;
+}

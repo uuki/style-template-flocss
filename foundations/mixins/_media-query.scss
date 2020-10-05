@@ -1,0 +1,17 @@
+@mixin media-query-pc($break-point: $BREAK_POINT_SP + 1) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin media-query-pc-large($break-point: $BREAK_POINT_PC_LARGE + 1) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin media-query-sp($break-point: $BREAK_POINT_SP) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}

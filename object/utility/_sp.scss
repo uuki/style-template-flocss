@@ -1,0 +1,36 @@
+.u-sp-hidden {
+
+}
+
+.u-sp-block {
+  display: none !important;
+}
+
+.u-sp-inlineBlock {
+  display: none !important;
+}
+
+.u-sp-inline {
+  display: none !important;
+}
+
+/**
+ * mobile
+ */
+@include mobile {
+  .u-sp-hidden {
+    display: none !important;
+  }
+
+  .u-sp-block {
+    display: block !important;
+  }
+
+  .u-sp-inlineBlock {
+    display: inline-block !important;
+  }
+
+  .u-sp-inline {
+    display: inline !important;
+  }
+}

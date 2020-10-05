@@ -1,0 +1,11 @@
+@function vw($px, $device: 'pc') {
+  $base: 0;
+
+  @if($device == 'pc') {
+    $base: 1400;
+  } @else {
+    $base: 375;
+  }
+
+  @return ($px / $base) * 100vw;
+}
