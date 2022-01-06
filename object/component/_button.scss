@@ -1,0 +1,15 @@
+// Common style across devices
+.c-button {
+}
+
+// Mobile only diff style
+@media (--mobile) {
+  .c-button {
+  }
+}
+
+// Desktop only diff style
+@media (--desktop) {
+  .c-button {
+  }
+}

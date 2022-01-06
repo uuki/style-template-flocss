@@ -15,16 +15,31 @@ html {
 body {
   margin: auto;
   word-wrap: break-word;
-  font-family: $font_base;
+  font-family: var(--font_base);
   font-size: 1.6rem;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'palt';
+
+  .no-scroll-chain & {
+    overscroll-behavior-y: none;
+  }
 }
 
 a {
   text-decoration: none;
 }
+
+/**
+ * As needed.
+ */
+
+// ::selection {
+//   background: var(--any-color);
+//   color: var(--any-color);
+// }
 
 // input {
 //   ::-webkit-contacts-auto-fill-button {

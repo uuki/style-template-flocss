@@ -1,19 +1,4 @@
-.u-sp-block {
-  display: none !important;
-}
-
-.u-sp-inlineBlock {
-  display: none !important;
-}
-
-.u-sp-inline {
-  display: none !important;
-}
-
-/**
- * mobile
- */
-@include media-query-sp {
+@media (--mobile) {
   .u-sp-hidden {
     display: none !important;
   }
@@ -22,11 +7,30 @@
     display: block !important;
   }
 
+  .u-sp-flex {
+    display: flex !important;
+  }
+
   .u-sp-inlineBlock {
     display: inline-block !important;
   }
 
   .u-sp-inline {
     display: inline !important;
+  }
+}
+
+@media (--desktop) {
+  .u-sp-block,
+  .u-sp-flex {
+    display: none !important;
+  }
+
+  .u-sp-inlineBlock {
+    display: none !important;
+  }
+
+  .u-sp-inline {
+    display: none !important;
   }
 }

@@ -1,0 +1,5 @@
+@use "sass:math";
+
+@mixin line-height($font-size, $line-height) {
+  line-height: math.div($line-height, $font-size);
+}

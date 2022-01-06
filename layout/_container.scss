@@ -1,0 +1,21 @@
+// Common style across devices
+.l-container {
+}
+
+// Mobile only diff style
+@media (--mobile) {
+  .l-container {
+  }
+}
+
+// Desktop only diff style
+@media (--desktop) {
+  .l-container {
+  }
+}
+
+// Desktop (large resolution) only diff style
+@media (--desktop-large) {
+  .l-container {
+  }
+}

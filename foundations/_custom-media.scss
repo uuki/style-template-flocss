@@ -1,0 +1,7 @@
+/**
+ * PostCSS Custom Media
+ * @see https://www.npmjs.com/package/postcss-custom-media
+ */
+@custom-media --mobile (max-width: 1023px);
+@custom-media --desktop (min-width: 1024px);
+@custom-media --desktop-large (min-width: 1366px);

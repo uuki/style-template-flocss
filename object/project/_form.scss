@@ -1,0 +1,15 @@
+// Common style across devices
+.p-form {
+}
+
+// Mobile only diff style
+@media (--mobile) {
+  .p-form {
+  }
+}
+
+// Desktop only diff style
+@media (--desktop) {
+  .p-form {
+  }
+}
