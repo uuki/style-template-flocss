@@ -1,12 +1,15 @@
 @charset "utf-8";
 
-// https://github.com/Aintaer/import-glob-loader
-// @doc Importing a directory where .scss does not exist will result in a build error
+/**
+ * https://github.com/Aintaer/import-glob-loader
+ * @doc Importing a directory where .scss does not exist will result in a build error
+ */
 @import './foundations/variables/*';
 @import './foundations/mixins/*';
 @import './foundations/functions/*';
 @import './object/utility/*';
 @import './foundations/*.scss';
-// @import './layout/*';
-// @import './object/component/*';
-// @import './object/project/*.scss';
+// @import './foundations/plugins/*'; // Add styles for the library, if necessary.
+@import './layout/*';
+@import './object/component/*.scss';
+@import './object/project/*.scss';

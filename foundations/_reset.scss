@@ -68,3 +68,14 @@ hr {
 blockquote {
   margin: auto;
 }
+
+button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}

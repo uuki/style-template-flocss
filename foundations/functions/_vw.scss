@@ -1,10 +1,10 @@
 @use "sass:math";
 
-@function vw($px, $device: 'pc') {
+@function vw($px, $device: 'desktop') {
   $base: 0;
 
-  @if($device == 'pc') {
-    $base: 1400;
+  @if($device == 'desktop') {
+    $base: 1366;
   } @else {
     $base: 375;
   }
