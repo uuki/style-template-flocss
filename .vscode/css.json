@@ -1,0 +1,68 @@
+{
+  "version": 1.1,
+  "properties": [],
+  "atDirectives": [
+    {
+      "name": "@import-normalize",
+      "description": "PostCSS Normalize lets you use the parts of normalize.css or sanitize.css that you need from your browserslist.",
+      "references": [
+        {
+          "name": "postcss-normalize",
+          "url": "https://www.npmjs.com/package/postcss-normalize"
+        }
+      ]
+    },
+    {
+      "name": "@import-glob",
+      "description": "The plugin postcss-import can now import each file",
+      "references": [
+        {
+          "name": "postcss-import-ext-glob",
+          "url": "https://www.npmjs.com/package/postcss-import-ext-glob"
+        }
+      ]
+    },
+    {
+      "name": "@tailwind",
+      "description": "A utility-first CSS framework for rapid UI development.",
+      "references": [
+        {
+          "name": "tailwindcss",
+          "url": "https://tailwindcss.com/"
+        }
+      ]
+    },
+    {
+      "name": "@apply",
+      "description": "@applyを使用して、既存のユーティリティクラスを独自のカスタムCSSにインライン化します。",
+      "references": [
+        {
+          "name": "@apply",
+          "url": "https://tailwindcss.jp/docs/functions-and-directives#apply"
+        }
+      ]
+    },
+    {
+      "name": "@layer",
+      "description": "The @layer rule declares a cascade layer, with the option to assign style rules.",
+      "references": [
+        {
+          "name": "at-layer",
+          "url": "https://www.w3.org/TR/css-cascade-5/#at-layer"
+        }
+      ]
+    },
+    {
+      "name": "@custom-media",
+      "description": "PostCSS Custom Media lets you use Custom Media Queries in CSS, following the CSS Media Queries specification.",
+      "references": [
+        {
+          "name": "postcss-custom-media",
+          "url": "https://www.npmjs.com/package/postcss-custom-media"
+        }
+      ]
+    }
+  ],
+  "pseudoClasses": [],
+  "pseudoElements": []
+}

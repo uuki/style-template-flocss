@@ -1,10 +1,8 @@
-@use "sass:math";
+/**
+ * @doc Outputs the calculated results
+ */
+$static: false;
 
-//
-// font-size を「px」と「rem」で指定
-// @param {int} $px 整数
-//
 @mixin font-size($px) {
-  font-size: $px + px;
-  font-size: math.div($px, 10) + rem;
+  font-size: calc(if($static, $px, #{$px}) / 16 * 1rem);
 }

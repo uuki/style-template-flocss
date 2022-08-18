@@ -1,22 +1,8 @@
-// https://github.com/csstools/postcss-normalize#postcss-import-usage
 @import-normalize();
 
-html {
-  font-size: 10px;
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
 body {
-  margin: auto;
   word-wrap: break-word;
   font-family: var(--font_base);
-  font-size: 1.6rem;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,8 +14,10 @@ body {
   }
 }
 
-a {
-  text-decoration: none;
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 /**
