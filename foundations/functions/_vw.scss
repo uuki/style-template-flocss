@@ -4,18 +4,18 @@
  * $device -> Specify the value of $breakpoints
  * $minmax -> e.g. $minmax: (min: 14, max: 28)
  * ---
- * $breacpoints -> Breakpoints. (Liquid Reference Values.)
+ * $breakpoints -> Breakpoints. (Liquid Reference Values.)
  * $unit -> Unit of output. e.g. 'px' | 'rem'
  * $base -> Reference Value. (Specify the best view on the design.)
  */
-$breacpoints: (
+$breakpoints: (
   desktop: 1366,
   mobile: 375,
 );
 $unit: 'rem';
 
 @function vw($px, $device: 'desktop', $minmax: false) {
-  $base: map-get($breacpoints, $device);
+  $base: map-get($breakpoints, $device);
 
   @if $minmax {
     @if $unit == 'px' {
