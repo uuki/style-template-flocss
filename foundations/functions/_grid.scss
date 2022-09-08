@@ -1,0 +1,10 @@
+/**
+ * Grid System
+ * $unit -> Specify % for relative or vw for absolute. e.g. '%' | 'vw'
+ */
+@use "sass:math";
+$functions_grid: 16;
+
+@function grid($n, $unit: '%') {
+  @return math.div($n, $functions_grid) * 100 + #{$unit};
+}
