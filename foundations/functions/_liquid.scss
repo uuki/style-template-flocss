@@ -1,21 +1,21 @@
 @use "sass:math";
 /**
  * $px -> Value based on window size（px）e.g. $px: 16px when window width is 1366px
- * $device -> Specify the value of $breakpoints
+ * $size -> Specify the value of $references
  * $minmax -> e.g. $minmax: (min: 14, max: 28)
  * ---
- * $breakpoints -> Breakpoints. (Liquid Reference Values.)
+ * $references -> Breakpoints. (Liquid Reference Values.)
  * $unit -> Unit of output. e.g. 'px' | 'rem'
  * $base -> Reference Value. (Specify the best view on the design.)
  */
-$breakpoints: (
-  desktop: 1366,
-  mobile: 375,
+$references: (
+  md: 1366,
+  sm: 375,
 );
-$unit: 'rem';
+$unit: 'px';
 
-@function vw($px, $device: 'desktop', $minmax: false) {
-  $base: map-get($breakpoints, $device);
+@function liquid($px, $size: 'md', $minmax: false) {
+  $base: map-get($references, $size);
 
   @if $minmax {
     @if $unit == 'px' {
